@@ -1,7 +1,7 @@
 package model;
 
 public class User {
-    private int id;
+    private String id;
     private String password;
     private String name;//昵称
     private String tel;
@@ -10,11 +10,21 @@ public class User {
     private String sign;//签名
     private boolean admin;//管理员
 
-    public int getId() {
+    public User(String id, String password,String name, String tel, String job, String sex, String sign) {
+
+        this.id = id;
+        this.password = password;
+        this.name=name;
+        this.tel=tel;
+        this.job=job;
+        this.sex=sex;
+        this.sign=sign;
+    }
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
